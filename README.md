@@ -8,7 +8,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/curso-Engenharia%20de%20Software-0b7285?style=flat-square" alt="Curso">
   <img src="https://img.shields.io/badge/semestre-6º-343a40?style=flat-square" alt="Semestre">
-  <img src="https://img.shields.io/badge/unidade-1-5f3dc4?style=flat-square" alt="Unidade">
+  <img src="https://img.shields.io/badge/unidades-1%20e%202-5f3dc4?style=flat-square" alt="Unidades">
   <img src="https://img.shields.io/badge/status-em%20andamento-2b8a3e?style=flat-square" alt="Status">
 </p>
 
@@ -30,8 +30,10 @@ analogia e comparação que eu mesmo montei enquanto estudava.
 | Unidade | Aula | Assunto | Status |
 |:-:|:-:|---|:-:|
 | 1 | 02 | [Notas de Aula — Linguagens Formais e Gramáticas](Unidade1_LinguagensFormais/Notas_de_Aula.md) | ✅ |
+| 2 | 03 | [Notas de Aula — Gramáticas Formais e Hierarquia de Chomsky](Unidade2_GramaticasFormais/Notas_de_Aula.md) | ✅ |
+| 2 | — | [Lista 1 — resolvida e justificada](Unidade2_GramaticasFormais/Lista1_Resolvida.md) | ✅ |
 
-O arquivo segue o formato pedido na entrega:
+Os arquivos de notas seguem o formato pedido na entrega:
 
 ```
 Sumário → Objetivos → Conteúdo → Exemplos → Exercícios → Revisão para prova
@@ -46,8 +48,11 @@ E ainda tem mapa mental e checklist no fim, pra fechar a revisão.
 ```
 .
 ├── README.md                         ← você está aqui
-└── Unidade1_LinguagensFormais/
-    └── Notas_de_Aula.md              ← anotações + exercícios resolvidos
+├── Unidade1_LinguagensFormais/
+│   └── Notas_de_Aula.md              ← aula 02 · anotações + exercícios resolvidos
+└── Unidade2_GramaticasFormais/
+    ├── Notas_de_Aula.md              ← aula 03 · anotações + exercícios de fixação
+    └── Lista1_Resolvida.md           ← lista da unidade, com justificativa em toda questão
 ```
 
 Conforme a disciplina avança eu vou criando as próximas unidades seguindo a mesma organização.
@@ -68,6 +73,10 @@ Deixo essa tabela aqui no README porque no começo o que me travou foi a notaç�
 | `⊆` | contido em | `L ⊆ Σ*` — toda palavra de L está em Σ* |
 | `→` | produz / implica | em gramática: "gera"; em lógica: "se... então" |
 | `\|` | ou | separa as alternativas de uma regra de produção |
+| `⇒` | deriva em | um **passo** da derivação — diferente do `→`, que é a regra |
+| `G` | gramática | `G = (V, T, P, S)` — variáveis, terminais, produções e símbolo inicial |
+| `L(G)` | linguagem gerada | o conjunto de todas as palavras que a gramática `G` produz |
+| `∅` | conjunto vazio | linguagem sem nenhuma palavra — não confundir com `{ε}` |
 
 ---
 
