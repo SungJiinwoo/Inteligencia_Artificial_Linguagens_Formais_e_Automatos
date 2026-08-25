@@ -31,6 +31,7 @@ analogia e comparação que eu mesmo montei enquanto estudava.
 |:-:|:-:|---|:-:|
 | 1 | 02 | [Notas de Aula — Linguagens Formais e Gramáticas](Unidade1_LinguagensFormais/Notas_de_Aula.md) | ✅ |
 | 2 | 03 | [Notas de Aula — Gramáticas Formais e Hierarquia de Chomsky](Unidade2_GramaticasFormais/Notas_de_Aula.md) | ✅ |
+| 2 | 03 | [Exercícios práticos da aula — resolvidos](Unidade2_GramaticasFormais/Exercicios_Praticos_Aula3.md) | ✅ |
 | 2 | — | [Lista 1 — resolvida e justificada](Unidade2_GramaticasFormais/Lista1_Resolvida.md) | ✅ |
 
 Os arquivos de notas seguem o formato pedido na entrega:
@@ -52,6 +53,7 @@ E ainda tem mapa mental e checklist no fim, pra fechar a revisão.
 │   └── Notas_de_Aula.md              ← aula 02 · anotações + exercícios resolvidos
 └── Unidade2_GramaticasFormais/
     ├── Notas_de_Aula.md              ← aula 03 · anotações + exercícios de fixação
+    ├── Exercicios_Praticos_Aula3.md  ← os 3 blocos da aula, com as respostas abertas
     └── Lista1_Resolvida.md           ← lista da unidade, com justificativa em toda questão
 ```
 
