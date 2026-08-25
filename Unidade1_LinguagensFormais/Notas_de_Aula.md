@@ -3,13 +3,9 @@
 > Anotações da Unidade 1, escritas do meu jeito depois da aula.
 > Segue o formato pedido: sumário, objetivos, conteúdo, exemplos, exercícios e revisão para prova.
 
-[⬅ voltar para o índice](../README.md)
+## Sumário
 
----
-
-## 📑 Sumário
-
-- [🎯 Objetivos](#-objetivos)
+- [Objetivos](#objetivos)
 - [1. Alfabeto — Σ](#1-alfabeto--σ)
 - [2. Cadeia e comprimento](#2-cadeia-e-comprimento)
 - [3. Palavra vazia — ε](#3-palavra-vazia--ε)
@@ -24,12 +20,12 @@
 - [12. Exemplos resolvidos](#12-exemplos-resolvidos)
 - [13. Exercícios](#13-exercícios)
 - [14. Revisão para prova](#14-revisão-para-prova)
-- [15. Mapa mental](#15--mapa-mental)
-- [📌 Checklist](#-checklist)
+- [15. Mapa mental](#15-mapa-mental)
+- [Checklist](#checklist)
 
 ---
 
-## 🎯 Objetivos
+## Objetivos
 
 Transformei os objetivos da aula em perguntas — se eu respondo todas sem consultar, fechei a unidade:
 
@@ -93,7 +89,7 @@ Se escreve `ε` e se lê **épsilon**. É a cadeia que não possui nenhum símbo
 |ε| = 0
 ```
 
-⚠️ O aviso mais importante da seção: **ε não é espaço em branco**. Espaço seria um símbolo e
+O aviso mais importante da seção: **ε não é espaço em branco**. Espaço seria um símbolo e
 contaria no comprimento. ε significa que **não existe nenhum símbolo** na cadeia.
 
 O jeito que memorizei: ε funciona como o **zero da concatenação**. Assim como `5 + 0 = 5`, vale
@@ -132,7 +128,7 @@ Para um alfabeto com 2 símbolos, a quantidade de cadeias de tamanho `n` é `2�
 
 A linha do tamanho 0 dá 1, e essa única cadeia é o ε.
 
-> 📌 **Conclusão que cai na prova:** Σ* é **infinito**, mas cada cadeia dentro dele tem tamanho
+>  **Conclusão que cai na prova:** Σ* é **infinito**, mas cada cadeia dentro dele tem tamanho
 > **finito**. "Sem limite de tamanho" não é a mesma coisa que "palavra infinita".
 
 ---
@@ -198,7 +194,7 @@ Sufixos(ab) = {ε, b, ab}
 |:-:|---|---|
 | `ab` | ε, a, ab | ε, b, ab |
 
-🧠 As dicas que anotei: *prefixo começa no começo, sufixo termina no final*.
+As dicas que anotei: *prefixo começa no começo, sufixo termina no final*.
 
 ### O macete que uso pra não esquecer nenhum
 
@@ -254,7 +250,7 @@ Destrinchando as quatro partes:
 | Produções | `S → aS \| ε` |
 | Símbolo inicial | `S` |
 
-🧠 O que fixei sobre terminal × não terminal: **não terminal** é a variável que ainda vai ser
+O que fixei sobre terminal × não terminal: **não terminal** é a variável que ainda vai ser
 substituída (aparece em maiúscula); **terminal** é o símbolo definitivo, que fica na palavra
 (minúscula). Enquanto sobrar maiúscula, a derivação ainda não acabou.
 
@@ -444,12 +440,11 @@ Uma produção trocada, e a linguagem muda. Isso me ajudou a entender o papel do
 As duas atividades pedidas na aula, resolvidas. Deixei o gabarito escondido pra eu conseguir
 refazer sem ver a resposta quando for revisar.
 
-### 📝 Atividade 1 — Prefixos e sufixos
+### Atividade 1 — Prefixos e sufixos
 
 **Enunciado:** considere a palavra `ab`. Liste os prefixos e sufixos.
 
-<details>
-<summary>👀 Ver minha resposta</summary>
+Minha resposta:
 
 Usando a tesoura da seção 6:
 
@@ -471,11 +466,9 @@ Reparar que o `ε` e a palavra inteira entram nas duas listas.
 O que **não** entra: `ba` (mudou a ordem, não é pedaço da palavra) e o `b` na lista de prefixos —
 `b` está no fim, então é sufixo, não prefixo.
 
-</details>
-
 ---
 
-### 📝 Atividade 2 — Gramática
+### Atividade 2 — Gramática
 
 **Enunciado:** considere a gramática
 
@@ -485,8 +478,7 @@ G = ({S}, {a}, {S → aS | ε}, S)
 
 Liste 3 palavras geradas.
 
-<details>
-<summary>👀 Ver minha resposta</summary>
+Minha resposta:
 
 Escolhi as três palavras mais curtas e derivei cada uma:
 
@@ -510,8 +502,6 @@ O que eu **não** poderia responder:
 
 - `b` — não é terminal desta gramática, nenhuma regra produz `b`;
 - `aS` — ainda tem não terminal, então a derivação não terminou e isso não é palavra.
-
-</details>
 
 ---
 
@@ -545,7 +535,7 @@ E os pontos onde eu mais escorrego:
 
 ---
 
-## 15. 🧠 Mapa mental
+## 15.  Mapa mental
 
 Desenhei seguindo o caminho da aula: dos símbolos até as palavras geradas.
 
@@ -591,33 +581,33 @@ Desenhei seguindo o caminho da aula: dos símbolos até as palavras geradas.
 
 ---
 
-## 📌 Checklist
+## Checklist
 
 Marco o que já consigo explicar em voz alta, sem consultar:
 
-- [ ] O que é um alfabeto Σ;
-- [ ] O que é uma cadeia;
-- [ ] O que significa ε;
-- [ ] Por que `|ε| = 0`;
-- [ ] Por que ε não é espaço em branco;
-- [ ] O que é um prefixo;
-- [ ] O que é um sufixo;
-- [ ] O que significa Σ*;
-- [ ] Se Σ* possui limite de tamanho;
-- [ ] Quantas cadeias de tamanho `n` existem sobre um alfabeto de 2 símbolos;
-- [ ] O que é uma linguagem formal L;
-- [ ] O que significa `L ⊆ Σ*`;
-- [ ] A diferença entre linguagem finita e infinita;
-- [ ] O que é uma gramática formal e quais são as suas quatro partes;
-- [ ] O que são terminais e não terminais;
-- [ ] O que é uma regra de produção;
-- [ ] Como ler `S → aS | ε`;
-- [ ] As duas leituras do símbolo `→`;
-- [ ] Como gerar palavras usando uma gramática.
+- O que é um alfabeto Σ;
+- O que é uma cadeia;
+- O que significa ε;
+- Por que `|ε| = 0`;
+- Por que ε não é espaço em branco;
+- O que é um prefixo;
+- O que é um sufixo;
+- O que significa Σ*;
+- Se Σ* possui limite de tamanho;
+- Quantas cadeias de tamanho `n` existem sobre um alfabeto de 2 símbolos;
+- O que é uma linguagem formal L;
+- O que significa `L ⊆ Σ*`;
+- A diferença entre linguagem finita e infinita;
+- O que é uma gramática formal e quais são as suas quatro partes;
+- O que são terminais e não terminais;
+- O que é uma regra de produção;
+- Como ler `S → aS | ε`;
+- As duas leituras do símbolo `→`;
+- Como gerar palavras usando uma gramática.
 
 ---
 
-## 🚀 Conceito-chave
+## Conceito-chave
 
 Se eu tiver que resumir a unidade inteira em cinco linhas:
 
@@ -626,9 +616,3 @@ Se eu tiver que resumir a unidade inteira em cinco linhas:
 > Σ* reúne todas as cadeias possíveis.
 > Uma linguagem escolhe algumas delas.
 > E a gramática é o conjunto de regras que gera exatamente essas escolhidas.
-
----
-
-<p align="center">
-  <a href="../README.md">⬅ voltar para o índice</a>
-</p>

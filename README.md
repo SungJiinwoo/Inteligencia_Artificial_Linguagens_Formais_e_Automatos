@@ -1,98 +1,70 @@
-<h1 align="center">Inteligência Artificial</h1>
-<h3 align="center">Linguagens Formais e Autômatos</h3>
+# Inteligência Artificial - Linguagens Formais e Autômatos
 
-<p align="center">
-  Caderno de estudos da disciplina — Engenharia de Software · 6º semestre
-</p>
+Caderno de estudos da disciplina. Engenharia de Software, 6º semestre.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/curso-Engenharia%20de%20Software-0b7285?style=flat-square" alt="Curso">
-  <img src="https://img.shields.io/badge/semestre-6º-343a40?style=flat-square" alt="Semestre">
-  <img src="https://img.shields.io/badge/unidades-1%20e%202-5f3dc4?style=flat-square" alt="Unidades">
-  <img src="https://img.shields.io/badge/status-em%20andamento-2b8a3e?style=flat-square" alt="Status">
-</p>
-
----
-
-## Sobre este repositório
+## Sobre
 
 Aqui eu guardo o que vou produzindo na disciplina: as anotações que faço a partir das aulas, os
-exercícios resolvidos e os resumos que uso pra estudar antes da prova.
+exercícios resolvidos e os resumos que uso para estudar antes da prova.
 
-A ideia não é copiar o material da professora — é reescrever o conteúdo com as minhas palavras, do
-jeito que eu consigo reler três dias antes da prova e entender de novo. Por isso tem macete,
-analogia e comparação que eu mesmo montei enquanto estudava.
-
----
+A ideia não é copiar o material da professora, é reescrever o conteúdo com as minhas palavras, do
+jeito que eu consigo reler três dias antes da prova e entender de novo.
 
 ## Conteúdo
 
-| Unidade | Aula | Assunto | Status |
-|:-:|:-:|---|:-:|
-| 1 | 02 | [Notas de Aula — Linguagens Formais e Gramáticas](Unidade1_LinguagensFormais/Notas_de_Aula.md) | ✅ |
-| 2 | 03 | [Notas de Aula — Gramáticas Formais e Hierarquia de Chomsky](Unidade2_GramaticasFormais/Notas_de_Aula.md) | ✅ |
-| 2 | 03 | [Exercícios práticos da aula — resolvidos](Unidade2_GramaticasFormais/Exercicios_Praticos_Aula3.md) | ✅ |
-| 2 | — | [Lista 1 — resolvida e justificada](Unidade2_GramaticasFormais/Lista1_Resolvida.md) | ✅ |
+Unidade 1 - Linguagens Formais
 
-Os arquivos de notas seguem o formato pedido na entrega:
+- [Notas de aula 02 - Linguagens formais e gramáticas](Unidade1_LinguagensFormais/Notas_de_Aula.md)
 
-```
-Sumário → Objetivos → Conteúdo → Exemplos → Exercícios → Revisão para prova
-```
+Unidade 2 - Gramáticas Formais
 
-E ainda tem mapa mental e checklist no fim, pra fechar a revisão.
-
----
+- [Notas de aula 03 - Gramáticas formais e Hierarquia de Chomsky](Unidade2_GramaticasFormais/Notas_de_Aula.md)
+- [Exercícios práticos da aula 3 - resolvidos](Unidade2_GramaticasFormais/Exercicios_Praticos_Aula3.md)
+- [Lista 1 - resolvida](Unidade2_GramaticasFormais/Lista1_Resolvida.md)
 
 ## Organização dos arquivos
 
 ```
 .
-├── README.md                         ← você está aqui
+├── README.md
 ├── Unidade1_LinguagensFormais/
-│   └── Notas_de_Aula.md              ← aula 02 · anotações + exercícios resolvidos
+│   └── Notas_de_Aula.md              aula 02, anotações e exercícios
 └── Unidade2_GramaticasFormais/
-    ├── Notas_de_Aula.md              ← aula 03 · anotações + exercícios de fixação
-    ├── Exercicios_Praticos_Aula3.md  ← os 3 blocos da aula, com as respostas abertas
-    └── Lista1_Resolvida.md           ← lista da unidade, com justificativa em toda questão
+    ├── Notas_de_Aula.md              aula 03, anotações
+    ├── Exercicios_Praticos_Aula3.md  os 3 blocos da aula, resolvidos
+    └── Lista1_Resolvida.md           a lista da unidade, resolvida
 ```
 
 Conforme a disciplina avança eu vou criando as próximas unidades seguindo a mesma organização.
 
----
-
 ## Legenda de símbolos
 
-Deixo essa tabela aqui no README porque no começo o que me travou foi a notação, não o conceito.
+Deixo essa tabela aqui porque no começo o que me travou foi a notação, não o conceito.
 
-| Símbolo | Nome | Significa |
-|:-:|---|---|
-| `Σ` | sigma | alfabeto — conjunto finito de símbolos |
-| `Σ*` | sigma estrela | todas as cadeias possíveis com Σ, incluindo ε |
-| `ε` | épsilon | palavra vazia, com zero símbolos |
-| `L` | — | linguagem formal, um subconjunto de Σ* |
-| `\|w\|` | comprimento | quantidade de símbolos da cadeia |
-| `⊆` | contido em | `L ⊆ Σ*` — toda palavra de L está em Σ* |
-| `→` | produz / implica | em gramática: "gera"; em lógica: "se... então" |
-| `\|` | ou | separa as alternativas de uma regra de produção |
-| `⇒` | deriva em | um **passo** da derivação — diferente do `→`, que é a regra |
-| `G` | gramática | `G = (V, T, P, S)` — variáveis, terminais, produções e símbolo inicial |
-| `L(G)` | linguagem gerada | o conjunto de todas as palavras que a gramática `G` produz |
-| `∅` | conjunto vazio | linguagem sem nenhuma palavra — não confundir com `{ε}` |
-
----
+```
+Σ       alfabeto, conjunto finito de símbolos
+Σ*      todas as palavras possíveis com Σ, incluindo ε
+ε       palavra vazia, com zero símbolos
+∅       conjunto vazio, linguagem sem nenhuma palavra
+L       linguagem formal, um subconjunto de Σ*
+|w|     comprimento, quantidade de símbolos da palavra
+⊆       contido em
+∈       pertence a
+∉       não pertence a
+G       gramática, G = (V, T, P, S)
+V       variáveis ou não terminais
+T       terminais
+P       produções, as regras
+S       símbolo inicial
+→       produz, em gramática; implica, em lógica
+⇒       deriva em, um passo da derivação
+|       ou, separa as alternativas de uma regra
+L(G)    linguagem gerada pela gramática G
+```
 
 ## Como eu estudo com esse material
 
-1. Leio o **conteúdo** uma vez inteiro, sem parar pra anotar.
-2. Refaço os **exercícios** com o gabarito fechado (deixei em blocos recolhíveis justamente pra isso).
-3. Na véspera, leio só a **revisão para prova**.
-4. Se travar em algum item do **checklist**, volto direto naquela seção.
-
-Rende bem mais do que reler tudo do começo, que era o que eu fazia antes.
-
----
-
-<p align="center">
-  <sub>Repositório pessoal de estudos · atualizado conforme as aulas acontecem</sub>
-</p>
+1. Leio o conteúdo uma vez inteiro, sem parar para anotar.
+2. Refaço os exercícios com o gabarito fechado.
+3. Na véspera, leio só a revisão para prova.
+4. Se travar em algum ponto, volto direto naquela seção.
