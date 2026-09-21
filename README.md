@@ -22,6 +22,10 @@ Unidade 2 - Gramáticas Formais
 - [Exercícios práticos da aula 3 - resolvidos](Unidade2_GramaticasFormais/Exercicios_Praticos_Aula3.md)
 - [Lista 1 - resolvida](Unidade2_GramaticasFormais/Lista1_Resolvida.md)
 
+Unidade 3 - Expressões Regulares
+
+- [Atividade prática - Regex para validação de e-mail](Unidade3_ExpressoesRegulares/Atividade_Pratica_Regex_Email.md)
+
 ## Organização dos arquivos
 
 ```
@@ -29,11 +33,17 @@ Unidade 2 - Gramáticas Formais
 ├── README.md
 ├── Unidade1_LinguagensFormais/
 │   └── Notas_de_Aula.md              aula 02, anotações e exercícios
-└── Unidade2_GramaticasFormais/
-    ├── Notas_de_Aula.md              aula 03, anotações
-    ├── Exercicios_Praticos_Aula3.md  os 3 blocos da aula, resolvidos
-    └── Lista1_Resolvida.md           a lista da unidade, resolvida
+├── Unidade2_GramaticasFormais/
+│   ├── Notas_de_Aula.md              aula 03, anotações
+│   ├── Exercicios_Praticos_Aula3.md  os 3 blocos da aula, resolvidos
+│   └── Lista1_Resolvida.md           a lista da unidade, resolvida
+└── Unidade3_ExpressoesRegulares/
+    ├── Atividade_Pratica_Regex_Email.md   a atividade resolvida e explicada
+    └── validador_email.py                 o código que eu entreguei
 ```
+
+Quando a atividade for de código, o programa fica em um arquivo separado e o `.md` do lado explica
+o raciocínio, como nas outras. O arquivo de anotações continua sendo o que eu releio antes da prova.
 
 Conforme a disciplina avança eu vou criando as próximas unidades seguindo a mesma organização.
 
