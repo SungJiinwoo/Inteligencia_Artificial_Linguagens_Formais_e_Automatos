@@ -160,6 +160,9 @@ Rodei também os outros exemplos do enunciado:
 
 Todos bateram com o esperado.
 
+Depois ainda escrevi o [testar_maquina.py](testar_maquina.py), que roda a máquina em todas as
+palavras de 0 e 1 com até 10 símbolos (2047 palavras) e compara com a resposta certa. Deu 0 erro.
+
 ### Descrição da Máquina de Turing criada
 
 A máquina reconhece 0ⁿ1ⁿ riscando um 0 e um 1 por volta. Em q0 ela risca o primeiro 0 (vira X) e
