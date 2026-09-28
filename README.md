@@ -24,7 +24,13 @@ Unidade 2 - Gramáticas Formais
 
 Unidade 3 - Expressões Regulares
 
+- [Notas de aula - Expressões regulares](Unidade3_ExpressoesRegulares/Notas_de_Aula.md)
 - [Atividade prática - Regex para validação de e-mail](Unidade3_ExpressoesRegulares/Atividade_Pratica_Regex_Email.md)
+
+Unidade 4 - Máquinas de Turing
+
+- [Notas de aula 09 - Máquinas de Turing](Unidade4_MaquinaDeTuring/Notas_de_Aula.md)
+- [Atividade 5 - Máquina de Turing para 0ⁿ1ⁿ](Unidade4_MaquinaDeTuring/Atividade_5_Maquina_de_Turing.md)
 
 ## Organização dos arquivos
 
@@ -37,9 +43,15 @@ Unidade 3 - Expressões Regulares
 │   ├── Notas_de_Aula.md              aula 03, anotações
 │   ├── Exercicios_Praticos_Aula3.md  os 3 blocos da aula, resolvidos
 │   └── Lista1_Resolvida.md           a lista da unidade, resolvida
-└── Unidade3_ExpressoesRegulares/
-    ├── Atividade_Pratica_Regex_Email.md   a atividade resolvida e explicada
-    └── validador_email.py                 o código que eu entreguei
+├── Unidade3_ExpressoesRegulares/
+│   ├── Notas_de_Aula.md                   resumo da aula de regex
+│   ├── Atividade_Pratica_Regex_Email.md   a atividade resolvida e explicada
+│   └── validador_email.py                 o código que eu entreguei
+└── Unidade4_MaquinaDeTuring/
+    ├── Notas_de_Aula.md                   aula 09, anotações do vídeo
+    ├── Atividade_5_Maquina_de_Turing.md   as 4 etapas e a questão final
+    ├── maquina_turing.py                  o simulador que eu escrevi
+    └── capturas/                          prints dos 3 testes
 ```
 
 Quando a atividade for de código, o programa fica em um arquivo separado e o `.md` do lado explica
