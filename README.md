@@ -51,6 +51,7 @@ Unidade 4 - Máquinas de Turing
     ├── Notas_de_Aula.md                   aula 09, anotações do vídeo
     ├── Atividade_5_Maquina_de_Turing.md   as 4 etapas e a questão final
     ├── maquina_turing.py                  o simulador que eu escrevi
+    ├── Atividade_5_..._entrega.pdf        o PDF que eu entreguei
     └── capturas/                          prints dos 3 testes
 ```
 
