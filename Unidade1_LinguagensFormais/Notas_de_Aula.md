@@ -1,33 +1,32 @@
-# Aula 02 — Notas de Aula: Linguagens Formais e Gramáticas
+# Aula 02 - Linguagens Formais e Gramáticas
 
-> Anotações da Unidade 1, escritas do meu jeito depois da aula.
-> Segue o formato pedido: sumário, objetivos, conteúdo, exemplos, exercícios e revisão para prova.
+Anotações da Unidade 1, escritas do meu jeito depois da aula.
 
-## Sumário
+Conteúdo:
 
-- [Objetivos](#objetivos)
-- [1. Alfabeto — Σ](#1-alfabeto--σ)
-- [2. Cadeia e comprimento](#2-cadeia-e-comprimento)
-- [3. Palavra vazia — ε](#3-palavra-vazia--ε)
-- [4. Σ* — todas as cadeias possíveis](#4-σ--todas-as-cadeias-possíveis)
-- [5. Linguagem formal — L ⊆ Σ*](#5-linguagem-formal--l--σ)
-- [6. Prefixos e sufixos](#6-prefixos-e-sufixos)
-- [7. Gramática formal](#7-gramática-formal)
-- [8. Regras de produção e os símbolos → e |](#8-regras-de-produção-e-os-símbolos--e-)
-- [9. Derivação de palavras](#9-derivação-de-palavras)
-- [10. Linguagem gerada — L(G)](#10-linguagem-gerada--lg)
-- [11. Operadores lógicos](#11-operadores-lógicos)
-- [12. Exemplos resolvidos](#12-exemplos-resolvidos)
-- [13. Exercícios](#13-exercícios)
-- [14. Revisão para prova](#14-revisão-para-prova)
-- [15. Mapa mental](#15-mapa-mental)
-- [Checklist](#checklist)
+Objetivos
+1. Alfabeto - Σ
+2. Cadeia e comprimento
+3. Palavra vazia - ε
+4. Σ* - todas as cadeias possíveis
+5. Linguagem formal - L ⊆ Σ*
+6. Prefixos e sufixos
+7. Gramática formal
+8. Regras de produção e os símbolos → e |
+9. Derivação de palavras
+10. Linguagem gerada - L(G)
+11. Operadores lógicos
+12. Exemplos resolvidos
+13. Exercícios
+14. Revisão para prova
+15. Mapa mental
+Checklist
 
 ---
 
 ## Objetivos
 
-Transformei os objetivos da aula em perguntas — se eu respondo todas sem consultar, fechei a unidade:
+Transformei os objetivos da aula em perguntas. Se eu respondo todas sem consultar, fechei a unidade:
 
 - O que é um alfabeto Σ?
 - O que é uma cadeia, e como se mede o tamanho dela?
@@ -41,9 +40,9 @@ Transformei os objetivos da aula em perguntas — se eu respondo todas sem consu
 
 ---
 
-## 1. Alfabeto — Σ
+## 1. Alfabeto - Σ
 
-Alfabeto é um **conjunto finito de símbolos**, representado pela letra grega sigma:
+Alfabeto é um conjunto finito de símbolos, representado pela letra grega sigma:
 
 ```
 Σ
@@ -61,8 +60,8 @@ Com esses dois símbolos eu consigo montar palavras como:
 a     b     aa     ab     ba     bb     aaa     aab     aba     ...
 ```
 
-O que anotei: **finito** é exigência do alfabeto. A lista de símbolos tem que terminar. A
-quantidade de *palavras* que dá pra montar com eles é outra história — essa pode ser infinita.
+O que anotei: finito é exigência do alfabeto. A lista de símbolos tem que terminar. A
+quantidade de *palavras* que dá pra montar com eles é outra história, e essa pode ser infinita.
 
 ---
 
@@ -77,30 +76,30 @@ símbolos, escrita entre barras:
 |a|   = 1
 ```
 
-Detalhe: a **ordem importa**. `ab` e `ba` são cadeias diferentes, mesmo usando os mesmos símbolos.
+Detalhe: a ordem importa. `ab` e `ba` são cadeias diferentes, mesmo usando os mesmos símbolos.
 
 ---
 
-## 3. Palavra vazia — ε
+## 3. Palavra vazia - ε
 
-Se escreve `ε` e se lê **épsilon**. É a cadeia que não possui nenhum símbolo:
+Se escreve `ε` e se lê épsilon. É a cadeia que não possui nenhum símbolo:
 
 ```
 |ε| = 0
 ```
 
-O aviso mais importante da seção: **ε não é espaço em branco**. Espaço seria um símbolo e
-contaria no comprimento. ε significa que **não existe nenhum símbolo** na cadeia.
+O aviso mais importante da seção: ε não é espaço em branco. Espaço seria um símbolo e
+contaria no comprimento. ε significa que não existe nenhum símbolo na cadeia.
 
-O jeito que memorizei: ε funciona como o **zero da concatenação**. Assim como `5 + 0 = 5`, vale
-`aε = a`. Grudar ε numa palavra não muda nada — isso vai aparecer direto nas derivações da seção 9.
+O jeito que memorizei: ε funciona como o zero da concatenação. Assim como `5 + 0 = 5`, vale
+`aε = a`. Grudar ε numa palavra não muda nada. Isso vai aparecer direto nas derivações da seção 9.
 
 ---
 
-## 4. Σ* — todas as cadeias possíveis
+## 4. Σ* - todas as cadeias possíveis
 
-`Σ*` é o conjunto de **todas as cadeias finitas** que dá pra formar com os símbolos de Σ,
-**incluindo ε**. Com `Σ = {a, b}`:
+`Σ*` é o conjunto de todas as cadeias finitas que dá pra formar com os símbolos de Σ,
+incluindo ε. Com `Σ = {a, b}`:
 
 ```
 Σ* = {ε, a, b, aa, ab, ba, bb, aaa, ...}
@@ -128,14 +127,14 @@ Para um alfabeto com 2 símbolos, a quantidade de cadeias de tamanho `n` é `2�
 
 A linha do tamanho 0 dá 1, e essa única cadeia é o ε.
 
->  **Conclusão que cai na prova:** Σ* é **infinito**, mas cada cadeia dentro dele tem tamanho
-> **finito**. "Sem limite de tamanho" não é a mesma coisa que "palavra infinita".
+>  Conclusão que cai na prova: Σ* é infinito, mas cada cadeia dentro dele tem tamanho
+> finito. "Sem limite de tamanho" não é a mesma coisa que "palavra infinita".
 
 ---
 
-## 5. Linguagem formal — L ⊆ Σ*
+## 5. Linguagem formal - L ⊆ Σ*
 
-Linguagem formal é um **conjunto de palavras** construídas a partir do alfabeto:
+Linguagem formal é um conjunto de palavras construídas a partir do alfabeto:
 
 ```
 L ⊆ Σ*
@@ -148,7 +147,7 @@ As três peças, lado a lado:
 
 | Peça | O que é |
 |:-:|---|
-| `Σ` | o alfabeto — os símbolos disponíveis |
+| `Σ` | o alfabeto, os símbolos disponíveis |
 | `Σ*` | todas as palavras possíveis com esses símbolos |
 | `L` | as palavras que eu escolhi de Σ* |
 
@@ -170,7 +169,7 @@ L = {a, aa, aaa, aaaa, ...}     →  infinita, a lista nunca acaba
 ```
 
 É justamente o caso infinito que justifica a próxima seção: se não dá pra listar as palavras, eu
-preciso de **regras** que as gerem.
+preciso de regras que as gerem.
 
 ---
 
@@ -178,13 +177,13 @@ preciso de **regras** que as gerem.
 
 Usando a palavra `ab`:
 
-**Prefixo** é o pedaço que começa **no início**:
+Prefixo é o pedaço que começa no início:
 
 ```
 Prefixos(ab) = {ε, a, ab}
 ```
 
-**Sufixo** é o pedaço que termina **no final**:
+Sufixo é o pedaço que termina no final:
 
 ```
 Sufixos(ab) = {ε, b, ab}
@@ -207,7 +206,7 @@ uma entre cada par e uma depois do último:
  0   1   2
 ```
 
-Em cada posição, o pedaço da **esquerda** é prefixo e o da **direita** é sufixo:
+Em cada posição, o pedaço da esquerda é prefixo e o da direita é sufixo:
 
 | Corte | Prefixo | Sufixo |
 |:-:|:-:|:-:|
@@ -215,14 +214,14 @@ Em cada posição, o pedaço da **esquerda** é prefixo e o da **direita** é su
 | 1 | `a` | `b` |
 | 2 | `ab` | `ε` |
 
-Assim eu nunca esqueço os dois que sempre escapam: o `ε` e a **palavra inteira**. Os dois contam
-como prefixo **e** como sufixo.
+Assim eu nunca esqueço os dois que sempre escapam: o `ε` e a palavra inteira. Os dois contam
+como prefixo e como sufixo.
 
 ---
 
 ## 7. Gramática formal
 
-A gramática fornece **regras para gerar palavras**. A forma geral é:
+A gramática fornece regras para gerar palavras. A forma geral é:
 
 ```
 G = (N, Σ, P, S)
@@ -250,8 +249,8 @@ Destrinchando as quatro partes:
 | Produções | `S → aS \| ε` |
 | Símbolo inicial | `S` |
 
-O que fixei sobre terminal × não terminal: **não terminal** é a variável que ainda vai ser
-substituída (aparece em maiúscula); **terminal** é o símbolo definitivo, que fica na palavra
+O que fixei sobre terminal × não terminal: não terminal é a variável que ainda vai ser
+substituída (aparece em maiúscula); terminal é o símbolo definitivo, que fica na palavra
 (minúscula). Enquanto sobrar maiúscula, a derivação ainda não acabou.
 
 ---
@@ -264,46 +263,46 @@ A regra:
 S → aS | ε
 ```
 
-é uma forma compacta de escrever **duas regras**:
+é uma forma compacta de escrever duas regras:
 
 ```
 S → aS          ou          S → ε
 ```
 
-Porque o símbolo `|` significa **OU**.
+Porque o símbolo `|` significa OU.
 
 ### Como ler o →
 
-O mesmo desenho muda de significado conforme o contexto — e essa é a pegadinha da aula:
+O mesmo desenho muda de significado conforme o contexto, e essa é a pegadinha da aula:
 
 | Contexto | Leitura | Exemplo |
 |---|---|---|
-| **Gramáticas** | produz / gera / deriva em | `S → aS` = *S produz aS* |
-| **Lógica** | implica / se... então | `p → q` = *se p, então q* |
+| Gramáticas | produz / gera / deriva em | `S → aS` = *S produz aS* |
+| Lógica | implica / se... então | `p → q` = *se p, então q* |
 
-Na hora de derivar, eu **escolho** qual das alternativas aplicar. É essa liberdade de escolha que
+Na hora de derivar, eu escolho qual das alternativas aplicar. É essa liberdade de escolha que
 faz uma gramática só gerar palavras de tamanhos diferentes.
 
 ---
 
 ## 9. Derivação de palavras
 
-Derivar é aplicar as regras, uma por vez, começando **sempre** pelo símbolo inicial `S`, até não
+Derivar é aplicar as regras, uma por vez, começando sempre pelo símbolo inicial `S`, até não
 sobrar nenhum não terminal. Com `G = ({S}, {a}, {S → aS | ε}, S)`:
 
-**Gerando ε** — aplico direto a regra de parada:
+Gerando ε: aplico direto a regra de parada:
 
 ```
 S → ε
 ```
 
-**Gerando `a`** — uma vez `S → aS`, depois `S → ε`:
+Gerando `a`: uma vez `S → aS`, depois `S → ε`:
 
 ```
 S → aS → aε → a
 ```
 
-**Gerando `aa`** — duas vezes `S → aS`:
+Gerando `aa`: duas vezes `S → aS`:
 
 ```
 S → aS
@@ -312,7 +311,7 @@ S → aS
   → aa
 ```
 
-**Gerando `aaa`** — três vezes `S → aS`:
+Gerando `aaa`: três vezes `S → aS`:
 
 ```
 S → aS
@@ -325,12 +324,12 @@ S → aS
 Dois pontos que anotei:
 
 - o passo `aaε → aa` só funciona porque ε não ocupa espaço (é o zero da concatenação, seção 3);
-- cada aplicação de `S → aS` **fixa um `a`** e empurra o `S` para a direita, como um cursor.
-  A regra `S → ε` é o que encerra — sem ela a derivação nunca terminaria.
+- cada aplicação de `S → aS` fixa um `a` e empurra o `S` para a direita, como um cursor.
+  A regra `S → ε` é o que encerra. Sem ela a derivação nunca terminaria.
 
 ---
 
-## 10. Linguagem gerada — L(G)
+## 10. Linguagem gerada - L(G)
 
 Juntando tudo que `G = ({S}, {a}, {S → aS | ε}, S)` produz:
 
@@ -369,9 +368,9 @@ q = "Eu levo um guarda-chuva."
 | Fórmula | Leitura |
 |:-:|---|
 | `¬p` | Não está chovendo. |
-| `p ∧ q` | Está chovendo **e** eu levo um guarda-chuva. |
-| `p ∨ q` | Está chovendo **ou** eu levo um guarda-chuva. |
-| `p → q` | **Se** está chovendo, **então** eu levo um guarda-chuva. |
+| `p ∧ q` | Está chovendo e eu levo um guarda-chuva. |
+| `p ∨ q` | Está chovendo ou eu levo um guarda-chuva. |
+| `p → q` | Se está chovendo, então eu levo um guarda-chuva. |
 
 O motivo de isso vir logo no começo da unidade é o aviso do `→`: aqui ele é implicação, na
 gramática é produção. Trocar os dois na prova é erro fácil de cometer.
@@ -382,7 +381,7 @@ gramática é produção. Trocar os dois na prova é erro fácil de cometer.
 
 Montei mais alguns casos pra treinar, todos usando os conceitos acima.
 
-### Exemplo A — comprimento
+### Exemplo A - comprimento
 
 ```
 |ab|   = 2
@@ -390,7 +389,7 @@ Montei mais alguns casos pra treinar, todos usando os conceitos acima.
 |ε|    = 0
 ```
 
-### Exemplo B — pertence ou não a Σ*
+### Exemplo B - pertence ou não a Σ*
 
 Com `Σ = {a, b}`:
 
@@ -400,7 +399,7 @@ Com `Σ = {a, b}`:
 | `ε` | sim | Σ* inclui a palavra vazia |
 | `abc` | não | `c` não pertence ao alfabeto |
 
-### Exemplo C — prefixos e sufixos de `aab`
+### Exemplo C - prefixos e sufixos de `aab`
 
 Aplicando a tesoura da seção 6:
 
@@ -416,7 +415,7 @@ Prefixos(aab) = {ε, a, aa, aab}
 Sufixos(aab)  = {ε, b, ab, aab}
 ```
 
-### Exemplo D — a mesma gramática, com uma produção trocada
+### Exemplo D - a mesma gramática, com uma produção trocada
 
 E se em vez de `S → aS | ε` a gramática fosse `S → aS | a`?
 
@@ -425,7 +424,7 @@ S → aS → aa        (parando com a regra S → a)
 S → a              (usando S → a de cara)
 ```
 
-Aí a menor palavra passa a ser `a`, e o `ε` **não** é mais gerado:
+Aí a menor palavra passa a ser `a`, e o `ε` não é mais gerado:
 
 ```
 L(G) = {a, aa, aaa, ...} = {aⁿ | n ≥ 1}
@@ -440,9 +439,9 @@ Uma produção trocada, e a linguagem muda. Isso me ajudou a entender o papel do
 As duas atividades pedidas na aula, resolvidas. Deixei o gabarito escondido pra eu conseguir
 refazer sem ver a resposta quando for revisar.
 
-### Atividade 1 — Prefixos e sufixos
+### Atividade 1 - Prefixos e sufixos
 
-**Enunciado:** considere a palavra `ab`. Liste os prefixos e sufixos.
+Enunciado: considere a palavra `ab`. Liste os prefixos e sufixos.
 
 Minha resposta:
 
@@ -454,7 +453,7 @@ Usando a tesoura da seção 6:
 | 1 | `a` | `b` |
 | 2 | `ab` | `ε` |
 
-**Resposta:**
+Resposta:
 
 ```
 Prefixos(ab) = {ε, a, ab}
@@ -463,14 +462,14 @@ Sufixos(ab)  = {ε, b, ab}
 
 Reparar que o `ε` e a palavra inteira entram nas duas listas.
 
-O que **não** entra: `ba` (mudou a ordem, não é pedaço da palavra) e o `b` na lista de prefixos —
+O que não entra: `ba` (mudou a ordem, não é pedaço da palavra) e o `b` na lista de prefixos, porque o
 `b` está no fim, então é sufixo, não prefixo.
 
 ---
 
-### Atividade 2 — Gramática
+### Atividade 2 - Gramática
 
-**Enunciado:** considere a gramática
+Enunciado: considere a gramática
 
 ```
 G = ({S}, {a}, {S → aS | ε}, S)
@@ -488,9 +487,9 @@ Escolhi as três palavras mais curtas e derivei cada uma:
 | `a` | `S → aS → aε → a` | `aS` uma vez, depois `ε` |
 | `aa` | `S → aS → aaS → aaε → aa` | `aS` duas vezes, depois `ε` |
 
-**Resposta:** `ε`, `a` e `aa`.
+Resposta: `ε`, `a` e `aa`.
 
-Outras respostas também valeriam — `aaa`, `aaaa`, `aaaaa`, … — porque a linguagem completa é:
+Outras respostas também valeriam, como `aaa`, `aaaa`, `aaaaa`, porque a linguagem completa é:
 
 ```
 L(G) = {aⁿ | n ≥ 0}
@@ -498,10 +497,10 @@ L(G) = {aⁿ | n ≥ 0}
 
 ou seja, qualquer quantidade de `a`, incluindo zero.
 
-O que eu **não** poderia responder:
+O que eu não poderia responder:
 
-- `b` — não é terminal desta gramática, nenhuma regra produz `b`;
-- `aS` — ainda tem não terminal, então a derivação não terminou e isso não é palavra.
+- `b`: não é terminal desta gramática, nenhuma regra produz `b`;
+- `aS`: ainda tem não terminal, então a derivação não terminou e isso não é palavra.
 
 ---
 
@@ -512,13 +511,13 @@ O mínimo que quero ter na cabeça no dia da prova:
 | Conceito | Notação | Exemplo |
 |---|:-:|---|
 | Alfabeto (finito) | `Σ` | `Σ = {a, b}` |
-| Cadeia / palavra | — | `ab` |
+| Cadeia / palavra | - | `ab` |
 | Comprimento | `\|w\|` | `\|ab\| = 2` |
 | Palavra vazia | `ε` | `\|ε\| = 0` |
 | Todas as cadeias | `Σ*` | `{ε, a, b, aa, ab, ba, bb, ...}` |
 | Linguagem | `L ⊆ Σ*` | `L = {a, ab, abb}` |
-| Prefixo | — | `Prefixos(ab) = {ε, a, ab}` |
-| Sufixo | — | `Sufixos(ab) = {ε, b, ab}` |
+| Prefixo | - | `Prefixos(ab) = {ε, a, ab}` |
+| Sufixo | - | `Sufixos(ab) = {ε, b, ab}` |
 | Gramática | `G = (N, Σ, P, S)` | `({S}, {a}, {S → aS \| ε}, S)` |
 | Produz | `→` | `S → aS` |
 | Ou | `\|` | `S → aS \| ε` |
@@ -526,12 +525,12 @@ O mínimo que quero ter na cabeça no dia da prova:
 
 E os pontos onde eu mais escorrego:
 
-1. `ε` **não** é espaço em branco — é ausência de símbolo, e `|ε| = 0`;
-2. Σ* é infinito, **mas** toda cadeia dentro dele é finita;
+1. `ε` não é espaço em branco, é ausência de símbolo, e `|ε| = 0`;
+2. Σ* é infinito, mas toda cadeia dentro dele é finita;
 3. `→` é *produz* em gramática e *implica* em lógica;
-4. `|` numa produção significa **ou**;
-5. prefixos e sufixos incluem sempre `ε` **e** a palavra inteira;
-6. começar a derivação por qualquer coisa que não seja `S` — sempre parte do símbolo inicial.
+4. `|` numa produção significa ou;
+5. prefixos e sufixos incluem sempre `ε` e a palavra inteira;
+6. começar a derivação por qualquer coisa que não seja `S`. Sempre parte do símbolo inicial.
 
 ---
 
