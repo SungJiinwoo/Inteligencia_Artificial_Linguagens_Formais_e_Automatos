@@ -4,7 +4,8 @@ Atividade remota da aula 09. Vale 1,0 ponto. Copiei cada pergunta antes de respo
 outros arquivos.
 
 O simulador que eu usei foi um programa meu em Python: [maquina_turing.py](maquina_turing.py). As
-capturas das execuções estão na pasta [capturas](capturas).
+capturas das execuções estão na pasta [capturas](capturas). O arquivo que eu entreguei, em PDF, é o
+[Atividade_5_Maquina_de_Turing_entrega.pdf](Atividade_5_Maquina_de_Turing_entrega.pdf).
 
 ---
 
