@@ -51,6 +51,7 @@ Unidade 4 - Máquinas de Turing
     ├── Notas_de_Aula.md                   aula 09, anotações do vídeo
     ├── Atividade_5_Maquina_de_Turing.md   as 4 etapas e a questão final
     ├── maquina_turing.py                  o simulador que eu escrevi
+    ├── testar_maquina.py                  teste com todas as palavras até 10 símbolos
     ├── Atividade_5_..._entrega.pdf        o PDF que eu entreguei
     └── capturas/                          prints dos 3 testes
 ```
@@ -59,6 +60,20 @@ Quando a atividade for de código, o programa fica em um arquivo separado e o `.
 o raciocínio, como nas outras. O arquivo de anotações continua sendo o que eu releio antes da prova.
 
 Conforme a disciplina avança eu vou criando as próximas unidades seguindo a mesma organização.
+
+## Como rodar os códigos
+
+Precisa só do Python 3, não usa biblioteca de fora. Rodo sempre de dentro da pasta da unidade:
+
+```
+cd Unidade3_ExpressoesRegulares
+python validador_email.py              pede os 5 e-mails e separa válidos e inválidos
+
+cd Unidade4_MaquinaDeTuring
+python maquina_turing.py 0011          mostra a fita passo a passo e diz ACEITA ou REJEITA
+python maquina_turing.py               sem argumento, roda os 3 testes da atividade
+python testar_maquina.py               confere a máquina com todas as palavras até 10 símbolos
+```
 
 ## Legenda de símbolos
 
