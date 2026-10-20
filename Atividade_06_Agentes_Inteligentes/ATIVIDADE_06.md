@@ -307,17 +307,3 @@ Duas regras de transição:
 
 O estado interno ajuda o programa a saber em que etapa está. Isso evita tratar toda informação como se fosse o começo de uma pesquisa nova. Uma limitação desse modelo é que três estados não conseguem representar todos os detalhes importantes, como mudanças no frete, qualidade real do livro ou uma compra que não foi confirmada. O modelo também não mostra o que acontece se a loja recusar o pedido ou se o valor mudar depois.
 
-## Entrega e avaliação
-Confira: identificação; nove análises no item 2.3; sete casos completos no item 2.4; dez conceitos no item 2.5; síntese; referências.
-Nome sugerido: `NomeSobrenome_Atividade_AgentesInteligentes`. Prazo e envio conforme orientação da professora.
-
-| Critério | Atividade avaliativa (1,0 ponto) A2 |
-|---|---:|
-| Item 2.3 — correção e argumentação | 30% |
-| Item 2.4 — PEAS e classificação justificada | 40% |
-| Item 2.5 — precisão conceitual e exemplos | 20% |
-| Síntese, organização e referências | 10% |
-
-## Referências
-Material-base: Capítulo 2 — Agentes inteligentes, disponibilizado para a aula de 19/10/2026.
-Referências adicionais: slides da aula de 19/10/2026, professora Kadidja Valéria (material disponibilizado na disciplina).
