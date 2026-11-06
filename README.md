@@ -1,6 +1,6 @@
 # Inteligência Artificial - Linguagens Formais e Autômatos
 
-Caderno de estudos da disciplina. Engenharia de Software, 6º semestre.
+Caderno de estudos da disciplina. Engenharia de Software, 7º semestre.
 
 ## Sobre
 
