@@ -49,7 +49,7 @@ $          fim da palavra
 (?<!...)   olha para trás e exige que NÃO tenha vindo aquilo, sem consumir símbolo
 ```
 
-Os dois últimos são os que não têm equivalente em gramática regular. Eles não escrevem nem consomem
+Os dois últimos não têm símbolo parecido na notação de gramática regular. Eles não escrevem nem consomem
 nada, só proíbem. Uso eles para as regras de não pode começar com ponto e parecidas.
 
 ---

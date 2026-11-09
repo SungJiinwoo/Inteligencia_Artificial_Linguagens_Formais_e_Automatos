@@ -32,11 +32,19 @@ Unidade 4 - Máquinas de Turing
 - [Notas de aula 09 - Máquinas de Turing](Unidade4_MaquinaDeTuring/Notas_de_Aula.md)
 - [Atividade 5 - Máquina de Turing para 0ⁿ1ⁿ](Unidade4_MaquinaDeTuring/Atividade_5_Maquina_de_Turing.md)
 
+Agentes Inteligentes
+
+- [Notas da aula de 19/10 - Agentes inteligentes](Atividade_06_Agentes_Inteligentes/README.md)
+- [Atividade 06 - Exercícios 2.3, 2.4 e 2.5](Atividade_06_Agentes_Inteligentes/ATIVIDADE_06.md)
+
 ## Organização dos arquivos
 
 ```
 .
 ├── README.md
+├── Atividade_06_Agentes_Inteligentes/
+│   ├── README.md                     aula de 19/10, anotações
+│   └── ATIVIDADE_06.md               exercícios 2.3, 2.4 e 2.5 e a síntese
 ├── Unidade1_LinguagensFormais/
 │   └── Notas_de_Aula.md              aula 02, anotações e exercícios
 ├── Unidade2_GramaticasFormais/

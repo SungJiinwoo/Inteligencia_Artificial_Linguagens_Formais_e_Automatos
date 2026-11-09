@@ -193,7 +193,7 @@ esses problemas continuam sem solução, porque o próprio conceito de algoritmo
 Pergunta: Como saber se um problema é apenas difícil ou se não existe nenhum algoritmo capaz de
 resolvê-lo para todos os casos?
 
-Um problema difícil tem algoritmo, só que ele demora muito. Um exemplo é ordenar ou testar todas as
+Um problema difícil tem algoritmo, só que ele demora muito. Um exemplo é testar todas as
 combinações de uma senha: é lento, mas eu sei que termina e dá a resposta certa. Isso é assunto de
 complexidade (tempo, O(n²), O(2ⁿ)).
 

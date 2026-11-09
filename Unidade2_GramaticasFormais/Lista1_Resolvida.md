@@ -377,7 +377,7 @@ Terminou no passo 2 porque 0 e 1 são terminais e não sobrou nenhuma variável 
 Uma coisa que reparei além do que foi pedido: essa gramática gera uma palavra só. Nenhuma regra
 devolve o S ou o A para a linha, então não tem como alongar nem escolher outro caminho. Ou seja,
 L(G) = {01}, uma linguagem que acaba, com uma palavra só. Bem diferente das gramáticas dos
-exercícios 8 em diante, que têm uma regra que se repete e geram infinitas palavras.
+exercícios 9 em diante, que têm uma regra que se repete e geram infinitas palavras.
 
 ---
 
