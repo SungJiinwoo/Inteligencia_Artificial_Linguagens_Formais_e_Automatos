@@ -4,7 +4,7 @@ Aula 19/10/2026 | Professora Kadidja Valéria | Inteligência artificial
 
 **Disciplina:** Inteligência Artificial, Linguagens Formais e Autômatos
 
-**Estudante:** João Gabriel Pereira de Araujo | **Turma:** ______
+**Estudante:** João Gabriel Pereira de Araujo | **Turma:** N1_2122 - Eng. Soft. (Not) - Sede UDF
 
 Realize os exercícios 2.3, 2.4 e 2.5 do Capítulo 2 sobre agentes inteligentes. Analise a racionalidade, descreva ambientes de tarefa por meio do modelo PEAS e explique os conceitos com suas próprias palavras. Utilize o capítulo disponibilizado e justifique suas respostas.
 
@@ -43,8 +43,8 @@ Para cada afirmação, indique V ou F, justifique e forneça exemplo ou contraex
 ### e. Toda função de agente é implementável por uma combinação de programa/máquina.
 
 - Julgamento: F
-- Justificativa: Uma função pode definir respostas para uma quantidade ilimitada de históricos. Não dá para garantir que toda função possível seja executada por um programa em uma máquina.
-- Exemplo ou contraexemplo: uma função que exige guardar e consultar uma tabela sem limite de tamanho não pode simplesmente ser colocada inteira na memória de um computador real.
+- Justificativa: Existem funções que nenhum programa consegue calcular. Se a resposta do agente depender de um problema indecidível, não existe programa que implemente essa função, em nenhuma máquina.
+- Exemplo ou contraexemplo: uma função que precisa responder se qualquer programa recebido vai parar ou não. É o problema da parada, visto em Máquinas de Turing.
 
 ### f. Suponha que um agente selecione sua ação uniformemente ao acaso do conjunto de ações possíveis. Existe um ambiente de tarefa determinista em que esse agente é racional.
 
@@ -183,7 +183,7 @@ Para cada caso, delimite o agente, preencha o PEAS e justifique todas as classif
 | Número de agentes | Agente único | Considerando apenas sua tentativa, sem interação direta com outro atleta. |
 | Previsibilidade | Estocástico | na prática, pois mesmo uma tentativa preparada pode variar. |
 | Dependência entre decisões | Sequencial | Porque corrida, impulsão e passagem pela barra dependem das etapas anteriores. |
-| Mudança durante a decisão | Dinâmico | Já que o atleta continua em movimento enquanto executa o salto. |
+| Mudança durante a decisão | Estático | Porque sarrafo, pista e colchão ficam iguais enquanto o atleta decide; quem se move é o próprio atleta. |
 | Natureza dos elementos | Combinação | a altura é contínua, mas o resultado válido ou inválido é separado. |
 | Conhecimento do funcionamento | Conhecido | quanto às regras e à técnica básica da prova. |
 
@@ -306,4 +306,8 @@ Duas regras de transição:
 - Regra 2: avaliando um anúncio + preço dentro do limite e livro correto → pedido enviado **e enviar o pedido de compra**.
 
 O estado interno ajuda o programa a saber em que etapa está. Isso evita tratar toda informação como se fosse o começo de uma pesquisa nova. Uma limitação desse modelo é que três estados não conseguem representar todos os detalhes importantes, como mudanças no frete, qualidade real do livro ou uma compra que não foi confirmada. O modelo também não mostra o que acontece se a loja recusar o pedido ou se o valor mudar depois.
+
+## Referências
+Material-base: Capítulo 2 — Agentes inteligentes, disponibilizado para a aula de 19/10/2026.
+Referências adicionais: slides da aula de 19/10/2026, professora Kadidja Valéria (material disponibilizado na disciplina).
 

@@ -436,8 +436,7 @@ Uma produção trocada, e a linguagem muda. Isso me ajudou a entender o papel do
 
 ## 13. Exercícios
 
-As duas atividades pedidas na aula, resolvidas. Deixei o gabarito escondido pra eu conseguir
-refazer sem ver a resposta quando for revisar.
+As duas atividades pedidas na aula, resolvidas.
 
 ### Atividade 1 - Prefixos e sufixos
 
