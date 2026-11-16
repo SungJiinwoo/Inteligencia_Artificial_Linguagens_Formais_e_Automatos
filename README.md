@@ -37,6 +37,10 @@ Agentes Inteligentes
 - [Notas da aula de 19/10 - Agentes inteligentes](Atividade_06_Agentes_Inteligentes/README.md)
 - [Atividade 06 - Exercícios 2.3, 2.4 e 2.5](Atividade_06_Agentes_Inteligentes/ATIVIDADE_06.md)
 
+Unidade 5 - Sistemas Especialistas
+
+- [Aula 13 - Triagem da fila da curadoria (notebook do Colab)](Unidade5_SistemasEspecialistas/Triagem_Curadoria_TCC.ipynb)
+
 ## Organização dos arquivos
 
 ```
@@ -55,13 +59,16 @@ Agentes Inteligentes
 │   ├── Notas_de_Aula.md                   resumo da aula de regex
 │   ├── Atividade_Pratica_Regex_Email.md   a atividade resolvida e explicada
 │   └── validador_email.py                 o código que eu entreguei
-└── Unidade4_MaquinaDeTuring/
-    ├── Notas_de_Aula.md                   aula 09, anotações do vídeo
-    ├── Atividade_5_Maquina_de_Turing.md   as 4 etapas e a questão final
-    ├── maquina_turing.py                  o simulador que eu escrevi
-    ├── testar_maquina.py                  teste com todas as palavras até 10 símbolos
-    ├── Atividade_5_..._entrega.pdf        o PDF que eu entreguei
-    └── capturas/                          prints dos 3 testes
+├── Unidade4_MaquinaDeTuring/
+│   ├── Notas_de_Aula.md                   aula 09, anotações do vídeo
+│   ├── Atividade_5_Maquina_de_Turing.md   as 4 etapas e a questão final
+│   ├── maquina_turing.py                  o simulador que eu escrevi
+│   ├── testar_maquina.py                  teste com todas as palavras até 10 símbolos
+│   ├── Atividade_5_..._entrega.pdf        o PDF que eu entreguei
+│   └── capturas/                          prints dos 3 testes
+└── Unidade5_SistemasEspecialistas/
+    ├── Triagem_Curadoria_TCC.ipynb   aula 13, árvore de decisão + regras, roda no Colab
+    └── dataset_triagem_tcc.csv       o dataset simulado que o notebook usa
 ```
 
 Quando a atividade for de código, o programa fica em um arquivo separado e o `.md` do lado explica
