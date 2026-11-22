@@ -39,7 +39,8 @@ Agentes Inteligentes
 
 Unidade 5 - Sistemas Especialistas
 
-- [Aula 13 - Triagem da fila da curadoria (notebook do Colab)](Unidade5_SistemasEspecialistas/Triagem_Curadoria_TCC.ipynb)
+- [Aula 13 - Triagem das filas do repositório de TCCs (notebook do Colab, em grupo com a Julyane)](Unidade5_SistemasEspecialistas/Triagem_Curadoria_TCC.ipynb)
+- [A1 - Ética e implicações em IA](Unidade5_SistemasEspecialistas/Etica_e_Implicacoes_IA.md)
 
 ## Organização dos arquivos
 
@@ -67,8 +68,10 @@ Unidade 5 - Sistemas Especialistas
 │   ├── Atividade_5_..._entrega.pdf        o PDF que eu entreguei
 │   └── capturas/                          prints dos 3 testes
 └── Unidade5_SistemasEspecialistas/
-    ├── Triagem_Curadoria_TCC.ipynb   aula 13, árvore de decisão + regras, roda no Colab
-    └── dataset_triagem_tcc.csv       o dataset simulado que o notebook usa
+    ├── Triagem_Curadoria_TCC.ipynb      aula 13, árvores de decisão + regras, roda no Colab
+    ├── dataset_triagem_tcc.csv          dataset simulado da fila da curadoria (minha parte)
+    ├── dataset_fila_de_cadastros.csv    dataset simulado da fila de cadastros (parte da Julyane)
+    └── Etica_e_Implicacoes_IA.md        A1, análise ética, reflexão e declaração de uso de IA
 ```
 
 Quando a atividade for de código, o programa fica em um arquivo separado e o `.md` do lado explica
