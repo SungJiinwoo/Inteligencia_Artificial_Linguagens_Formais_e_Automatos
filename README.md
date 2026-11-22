@@ -39,7 +39,7 @@ Agentes Inteligentes
 
 Unidade 5 - Sistemas Especialistas
 
-- [Aula 13 - Triagem das filas do repositório de TCCs (notebook do Colab, em grupo com a Julyane)](Unidade5_SistemasEspecialistas/Triagem_Curadoria_TCC.ipynb)
+- [Aula 13 - Triagem das filas do repositório de TCCs (notebook em grupo com a Julyane)](Unidade5_SistemasEspecialistas/Triagem_Curadoria_TCC.ipynb) ([abrir no Colab](https://colab.research.google.com/github/SungJiinwoo/Inteligencia_Artificial_Linguagens_Formais_e_Automatos/blob/main/Unidade5_SistemasEspecialistas/Triagem_Curadoria_TCC.ipynb))
 - [A1 - Ética e implicações em IA](Unidade5_SistemasEspecialistas/Etica_e_Implicacoes_IA.md)
 
 ## Organização dos arquivos
