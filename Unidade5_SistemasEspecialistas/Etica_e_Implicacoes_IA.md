@@ -63,15 +63,26 @@ revisão humana não pode ser um verniz no final, precisa estar desde o primeiro
 
 ### Reflexão individual: João Gabriel Pereira de Araújo
 
-Eu manteria a decisão de deixar o modelo só como sugestão e mudaria uma coisa: na fila da
-curadoria, eu mostraria também quais atributos pesaram na previsão, para a pessoa não ficar só com
-"aprovada" ou "rejeitada". O argumento que mais me influenciou foi o do artigo sobre autoria: quem
-assina continua responsável, então o sistema não pode decidir no lugar do administrador nem da
-curadoria. Isso vale também para o nosso trabalho: o que mais me marcou nessa discussão foi usar IA
-para aprender e conseguir explicar o que foi feito, e não só pedir uma resposta pronta. Para
-verificar se a medida funciona, eu contaria quantas recomendações o administrador e a curadoria
-mudaram depois de conferir e em que tipo de caso, principalmente nomes curtos e TCCs com termo ou
-monografia com problema.
+Eu manteria a decisão principal do grupo: a previsão da árvore entra no sistema como mais um fato,
+e quem aprova ou rejeita continua sendo a curadoria (RN-07). O que eu mudaria está na minha parte,
+a fila da curadoria (BL-35 e BL-36). Nos testes, as linhas 21 e 24 do dataset têm resumo grande,
+palavras-chave e abstract, mas foram rejeitadas por termo ilegível e monografia incompleta, e o
+modelo previu `aprovada` porque esses problemas não aparecem nos atributos. Uma pessoa da curadoria
+com a fila cheia poderia ler "aprovada" e aprovar sem abrir o PDF. Por isso eu mudaria a saída para
+mostrar, junto com a previsão, o que o modelo **não** confere (termo, monografia e conteúdo), e
+deixaria a R11 como uma lista do que conferir antes de liberar o botão de aprovar, e não só como
+texto. O argumento que mais me influenciou foi o do artigo: a ferramenta não responde pelo que
+produz, então quem assina continua responsável. Na curadoria, quem aprova responde pelo TCC que
+fica público com o nome do aluno, então a recomendação tem que ser fácil de conferir, e não fácil
+de seguir no automático. O trecho do vídeo completou isso para mim: esse cuidado tem que estar
+desde o primeiro traço, no desenho da saída, e não num aviso colocado no final. Levei a mesma ideia
+para o jeito de fazer o trabalho: usei IA para estudar e revisar, mas só ficou no notebook o que eu
+consegui conferir com o código do squad e explicar com as minhas palavras. Para verificar se a
+mudança funciona, eu compararia as recomendações com a decisão final da curadoria durante um
+semestre, olhando principalmente os casos em que a previsão foi `aprovada` e o TCC acabou rejeitado
+por termo ou monografia. Se esses casos forem barrados antes da aprovação e nenhum TCC for
+publicado com termo inválido, a medida funcionou; se a curadoria começar a marcar a lista sem
+abrir o arquivo, aí a mudança não resolveu e precisa ser revista.
 
 ## 4. Declaração de uso de sistemas de IA
 
