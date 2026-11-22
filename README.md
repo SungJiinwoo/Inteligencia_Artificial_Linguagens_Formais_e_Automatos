@@ -81,7 +81,7 @@ Conforme a disciplina avança eu vou criando as próximas unidades seguindo a me
 
 ## Como rodar os códigos
 
-Precisa só do Python 3, não usa biblioteca de fora. Rodo sempre de dentro da pasta da unidade:
+Os códigos das unidades 3 e 4 precisam só do Python 3. O notebook da unidade 5 usa pandas, scikit-learn e matplotlib e pode ser executado no Colab. Para os códigos abaixo, rodo de dentro da pasta da unidade:
 
 ```
 cd Unidade3_ExpressoesRegulares
