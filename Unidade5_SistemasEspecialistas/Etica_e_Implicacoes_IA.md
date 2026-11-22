@@ -35,8 +35,8 @@ cadastros (parte da Julyane, BL-11, BL-12 e BL-20) e a curadoria aprova ou rejei
 administrador e a curadoria; quem pode ser afetado pelas saídas são as pessoas que se cadastram
 (orientadores, coordenação e curadoria) e os alunos autores dos TCCs. A IA participa em dois
 pontos: duas árvores de decisão preveem a decisão mais provável (`validado`/`recusado` para o
-cadastro e `aprovada`/`rejeitada` para o TCC). As recomendações de acesso (R5, R6, R7), de data
-(R8) e de duplicidade (R9) vêm de regras de negócio do squad; as recomendações R1 a R4 e R10 e R11
+cadastro e `aprovada`/`rejeitada` para o TCC). As regras de acesso (R5 a R8), de data
+(R9) e de duplicidade (R10) vêm de regras de negócio do squad; as recomendações R1 a R4 e R11 e R12
 dependem da previsão de um modelo combinada com fatos informados por pessoas.
 
 | Aspecto | Situação concreta no projeto | Quem pode ser afetado | Medida que adotamos |
@@ -44,7 +44,7 @@ dependem da previsão de um modelo combinada com fatos informados por pessoas.
 | Privacidade e dados | O cadastro tem nome, e-mail institucional e data de nascimento; o TCC tem nomes de alunos e orientadores. | Quem se cadastra e os alunos autores. | Os modelos usam só contagens (palavras do nome, números no e-mail, palavras do resumo), nunca o dado em si. Os datasets são simulados. O squad já apaga cadastros não validados em 30 dias (RN-36) e a data de nascimento tem finalidade registrada (RN-22). |
 | Viés e equidade | O modelo da fila de cadastros aprendeu que nome de uma palavra e e-mail sem o nome levam a "recusado". Isso pode prejudicar quem tem nome curto, nome estrangeiro ou e-mail de setor (linha 20 do dataset). | Pessoas da faculdade com nomes ou e-mails fora do padrão. | Testar casos com o mesmo vínculo e nomes de tamanhos diferentes; a R3 manda falar com a pessoa antes de recusar quando o vínculo já foi confirmado; recusar exige motivo escrito (RN-36). |
 | Transparência | O administrador ou a curadoria podem achar que a recomendação é uma decisão. | Quem é analisado. | Toda saída mostra a previsão do modelo, a regra que disparou, os fatos usados e o aviso "recomendação de apoio". Entradas fora do intervalo do treino recebem aviso próprio. |
-| Supervisão e responsabilidade | Uma previsão errada pode levar a recusar um cadastro válido ou a aprovar um TCC com termo ilegível (linhas 21 e 24 do dataset). | Quem se cadastra e os autores do TCC. | A decisão é sempre humana: o administrador valida ou recusa (RF13) e só a curadoria aprova ou rejeita (RN-07). A rejeição exige motivo (RN-09) e quem enviou pode corrigir e reenviar. A R10 manda conferir monografia e termo mesmo quando a previsão é "aprovada". |
+| Supervisão e responsabilidade | Uma previsão errada pode levar a recusar um cadastro válido ou a aprovar um TCC com termo ilegível (linhas 21 e 24 do dataset). | Quem se cadastra e os autores do TCC. | A decisão é sempre humana: o administrador valida ou recusa (RF13) e só a curadoria aprova ou rejeita (RN-07). A rejeição exige motivo (RN-09) e quem enviou pode corrigir e reenviar. A R11 manda conferir monografia e termo mesmo quando a previsão é "aprovada". |
 | Impacto social | A curadoria ganha uma ordem de conferência e o administrador uma triagem dos cadastros. | Beneficia administrador, curadoria e alunos (publicação mais rápida). Prejudica quem for recusado ou atrasado por um erro tratado como definitivo. | O protótipo não altera nenhuma fila do sistema real. Antes de qualquer uso, seria preciso testar com decisões reais e com autorização da faculdade. |
 
 ## 3. Debate e dilema ético
